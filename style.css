@@ -10,6 +10,8 @@
     --title-color: #101828;
     --secondary-color: #8e2424;
     --vacancy-border: #EAECF0;
+    --input-border: #d0d5dd;
+    --copyright-color: #98a2b3;
 }
 
 ul {
@@ -94,8 +96,9 @@ nav {
 
 .metrics {
     display: flex;
-    padding: 0 112px 96px 112px;
-    gap: 32px;
+    margin: 0 112px 96px 112px;
+    padding: 0px 32px;
+    justify-content: space-between;
 }
 
     .metrics div {
@@ -129,16 +132,23 @@ nav {
 .vacancies {
     display: flex;
     flex-direction: column;
-    padding: 96px 0px;
-    gap: 64px;
+    margin: 96px 80px;
 }
     
     #talents {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px 32px;
     }
+
+    /* #talents img {
+        width: fit-content;
+        height: fit-content;
+        flex-wrap: wrap;
+        max-width:
+
+        FAZER A IMAGEM FICAR RESPONSIVA
+    } */
 
     #talents span {
         padding: 4px 12px;
@@ -165,22 +175,23 @@ nav {
     }
 
     #open-vacancies {
-        margin: 0px 256px;
+        padding: 0px 256px;
     }
 
     #open-vacancies ul {
-        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
     #open-vacancies h1 {
-        padding-bottom: 32px;
+        padding: 64px 0px 32px 0px;
         font-size: 20px;
         font-weight: 500;
         color: var(--title-color);
     }
 
     #open-vacancies ul li {
-        margin-bottom: 24px;
         padding: 24px;
         border: 1px solid var(--vacancy-border);
         border-radius: 16px;
@@ -198,4 +209,118 @@ nav {
         font-size: 16px;
         font-weight: 500;
         color: var(--text-color);
+    }
+
+.depositions {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 112px;
+    padding: 64px;
+    gap: 32px;
+    border-radius: 16px;
+    background: rgba(196, 25, 25, 0.03);
+    
+}
+
+    #collab-quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #collab-quote span {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--secondary-color);
+    }
+
+    #collab-quote h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        color: var(--title-color);
+    }
+
+    #collaborator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #collaborator h2 {
+        padding: 16px 0px 4px 0px;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--title-color)
+    }
+
+    #collaborator span {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-color);
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    margin: 96px 0px;
+    gap: 32px;
+}
+
+    .opportunities {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 32px;
+        gap: 20px;
+    }
+
+    .opportunities h1 {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--title-color);
+    }
+
+    .opportunities span {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--text-color);
+    }
+
+    .opportunities form {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .opportunities form input {
+        padding: 12px 14px 12px 16px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text-color);
+        border: 1px solid var(--input-border);
+        border-radius: 8px;
+    }
+
+    .opportunities form button {
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        background: var(--secondary-color);
+        border-radius: 8px;
+        border: none;
+    }
+
+    footer p {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--copyright-color);
     }
