@@ -12,6 +12,7 @@
     --vacancy-border: #EAECF0;
     --input-border: #d0d5dd;
     --copyright-color: #98a2b3;
+    --footer-bg: #f9fafb;
 }
 
 ul {
@@ -105,7 +106,6 @@ nav {
         display: flex;
         flex-direction: column;
         width: 280px;
-        /*preciso fazer a largura das divs ficarem responsivas*/
     }
 
     .metrics h1 {
@@ -140,15 +140,6 @@ nav {
         flex-direction: column;
         align-items: center;
     }
-
-    /* #talents img {
-        width: fit-content;
-        height: fit-content;
-        flex-wrap: wrap;
-        max-width:
-
-        FAZER A IMAGEM FICAR RESPONSIVA
-    } */
 
     #talents span {
         padding: 4px 12px;
@@ -214,7 +205,7 @@ nav {
 .depositions {
     display: flex;
     flex-direction: column;
-    margin: 0px 112px;
+    margin: 96px 112px;
     padding: 64px;
     gap: 32px;
     border-radius: 16px;
@@ -268,8 +259,10 @@ footer {
     align-items: center;
 
     justify-content: center;
-    margin: 96px 0px;
+    padding: 96px 0px;
     gap: 32px;
+
+    background-color: var(--footer-bg);
 }
 
     .opportunities {
